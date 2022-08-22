@@ -1,0 +1,102 @@
+body {
+    background-image: url(./images/cloudy.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 720px !important;
+    padding: 20px 40px !important;
+    background-color: rgba(255,255,255, 0.6);
+    border-radius: 30px;
+}
+
+
+.btn-color-red {
+    color: crimson !important;
+}
+
+a {
+    color: #e5e9eb;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-city {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.current-button {
+    background-color: #609AEB;
+    color: #fff;
+    border: 1px #fff solid transparent;
+    border-radius: 5px;
+    border-color: #609AEB;
+    margin-left: 5px;
+}
+
+.current-button:hover {
+    background-color: #1B4BBB;
+}
+
+.text {
+    border: 1px solid #7fc2ff;
+    border-radius: 20px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.forecast li {
+    text-align: center;
+}
+
+.city-name {
+    font-size: 36px;
+}
+
+.weather-summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-summary-item:first-child {
+    margin-right: 20px;
+}
+
+.temperature {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.current-wether {
+    font-size: 18px;
+}
+.separator {
+    border-bottom: solid 2px #fff;
+    margin-top: 20px; 
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wheather</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./weather.css"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <div class="search-city">
+                <form>
+                    <input class="text input-field" type="text" placeholder="Enter a city">
+                    <button class="btn btn-success btn-sm" type="button">Search</button>
+                    <button class="current-button btn-position" type="button">Current</button>
+
+                </form>
+            </div>
+            <div class="container-summary">
+                <div class="weather-summary">
+                    <div class="weather-summary-item">
+                        <h1 class="city-name">New York</h1>
+                        <div class="current-time">Saturday 10:25</div>
+                    </div>
+                    <div class="weather-summary-item">
+                        <div class="temperature-container">
+                            <span class="temperature">17</span>
+                            <button class="btn btn-link btn-color-red btn-celsius active">°C</button> 
+                            | 
+                            <button class="btn btn-link btn-color-red btn-fahrenheit">°F</button>
+                        </div>
+                        <div class="current-wether-container">
+                            <span class="current-wether-title">Currently:</span>
+                            <span class="current-wether">☀️</span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <ul class="forecast">
+            <li>
+                <div>
+                    Monday
+                </div>
+                19°C ☀️
+            </li>
+            <li>
+                <div>
+                    Thuesday
+                </div>
+                17°C 🌦
+            </li>
+            <li>
+                <div>
+                    Wednesday
+                </div>
+                22°C ⛅
+            </li>
+            <li>
+                <div>
+                    Thursday
+                </div>
+                24°C 🌞
+            </li>
+            <li>
+                <div>
+                    Friday
+                </div>
+                22°C ⛅
+            </li>
+        </ul>
+    </div>
+    <script src="weather.js"></script>  
+</body>
+</html>
