@@ -100,3 +100,12 @@ form {
     border-bottom: solid 2px #fff;
     margin-top: 20px; 
 }
+
+.github-link {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    margin-right: 5px;
+}
