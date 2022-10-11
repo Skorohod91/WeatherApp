@@ -1,4 +1,3 @@
-
 const currentDate = new Date()
 const days = ["Monday", "Thuesady", "Wednsday", "Thersday", "Friday", "Sanday", "Saturday"]
 const dateElement = document.querySelector(".current-time")
@@ -14,10 +13,19 @@ const currentTemp = document.querySelector(".temperature")
 const buttonPosition = document.querySelector('.btn-position')
 const apiKey = "88fd65229c4950c9b85ec14553ef7cae";
 const tempCelsius = 17
+const form = document.querySelector("form") 
 
 dateElement.innerHTML = day + " " + hours + ":" + minutes
 
 searchButton.addEventListener("click", () => {
+  if (inputField.value !== "") {
+    getTempByName(inputField.value)
+  }
+})
+
+form.addEventListener("submit", (event) => {
+  console.log(event);
+  event.preventDefault()
   if (inputField.value !== "") {
     getTempByName(inputField.value)
   }
@@ -56,3 +64,5 @@ function updateView(res) {
   currentTemp.innerHTML = Math.round(res.data.main.temp)
   cityName.innerHTML = res.data.name;
 }
+
+

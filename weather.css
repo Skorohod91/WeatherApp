@@ -42,7 +42,6 @@ form {
 .current-button {
     background-color: #609AEB;
     color: #fff;
-    border: 1px #fff solid transparent;
     border-radius: 5px;
     border-color: #609AEB;
     margin-left: 5px;
@@ -75,6 +74,7 @@ form {
 }
 
 .city-name {
+    color: #535F5F;
     font-size: 36px;
 }
 
@@ -108,4 +108,8 @@ form {
 
 a {
     margin-right: 5px;
+}
+
+.current-weather-imgclear {
+    width: 30px;
 }
