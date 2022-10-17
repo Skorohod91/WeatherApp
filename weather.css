@@ -4,12 +4,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
     padding: 40px 20px;
 }
 
 .container {
     box-sizing: border-box;
-    max-width: 720px !important;
+    max-width: 940px !important;
     padding: 20px 40px !important;
     background-color: rgba(255,255,255, 0.6);
     border-radius: 30px;
@@ -60,17 +61,29 @@ form {
     margin-right: 10px;
 }
 
-.forecast {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    margin: 20px 0 0;
-    padding: 0;
+.placeholder-text {
+    text-align: center;
 }
 
-.forecast li {
+.weather-forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.weather-forecast-date {
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.weather-forecast-temperature-min {
+    opacity: 0.5
+}
+
+.weather-forecast-temperatures {
+    font-size: 13px;
 }
 
 .city-name {
